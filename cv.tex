@@ -1,0 +1,167 @@
+\documentclass[12pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage{multicol}
+\usepackage{amsmath}
+\newcommand{\rom}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+
+\title{CV}
+
+\renewcommand{\baselinestretch}{0.75} 
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+ \geometry{top=0.7cm}
+ \geometry{bottom=0.3cm}
+ \geometry{left=0.9cm}
+ \geometry{right=1.1cm}
+\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+% personal data
+\firstname{Kirill}
+\familyname{Sizov}                               % optional, remove / comment the line if not wanted
+\address{}{Moscow, Russia}{+7~(929)~746~6348} % optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+              % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+                           % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{sizovki@yandex.ru}               % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+\vspace{-4ex}
+\section{Education}
+
+% \cventry{2015--2019}{}{}{}{Lyceum for Gifted Children, Saransk, Russia}
+% \underline{\normalsize Relevant courses:}}
+% \begin{cvcolumns}
+% \cvcolumn{}{
+% \begin{itemize}
+%     \item Algorithms and Data Structures
+%     \item C++ programming
+%     \item Mathematical analysis
+%     \end{itemize}
+% }
+% \cvcolumn{}{
+%     \begin{itemize}
+%     \item Discrete mathematics
+%     \item Linear algebra
+%     \end{itemize}
+% }
+% \end{cvcolumns}
+% \
+
+\cvitem{2015--2019}{Lyceum for Gifted Children, Saransk, Russia}
+\cvitem{}{\underline{\normalsize Relevant courses:}}
+% {\underline{\normalsize Relevant courses:}}
+
+\begin{cvcolumns}
+\cvcolumn{}{
+\begin{itemize}
+    \item Olympiad mathematics
+    \end{itemize}
+}
+\cvcolumn{}{
+    \begin{itemize}
+    \item Algorithms and Data Structures
+    \end{itemize}
+}
+\end{cvcolumns}
+\
+
+\cventry{2019--2023}{BS in Applied Mathematics and Computer Science}{}{}{National Research University "Higher School of Economics", Department of Computer Science, Moscow, Russia}
+{\underline{\normalsize Relevant courses:}}
+
+\begin{cvcolumns}
+\cvcolumn{}{
+\begin{itemize}
+    \item Algorithms and Data Structures
+    \item C++ programming
+    \item Mathematical analysis
+    \end{itemize}
+}
+\cvcolumn{}{
+    \begin{itemize}
+    \item Discrete mathematics
+    \item Linear algebra
+    \end{itemize}
+}
+\end{cvcolumns}
+\
+% arguments 3 to 6 can be left empty
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+
+
+\section{Skills}
+\cvitem{Programming languages}{C++, Python}
+\cvitem{Applications}{Git, Subversion}
+\cvitem{Languages}{Russian (Native), English (Intermediate)}
+\cvitem{Other}{Linux experience, \LaTeX}
+
+
+\section{Work experience}
+
+\cvitem{July 2019 - October 2019}{
+    \textbf{Yandex, Software Engineer intern}
+}
+
+
+\begin{cvcolumns}
+\cvcolumn{}{
+    \begin{itemize}
+        \item Python was used
+        \item Wrote monitoring system
+    \end{itemize}
+}\end{cvcolumns}
+
+
+
+\section{Achievements, awards and scholarships}
+\cvitem{2018}{2nd degree award in \rom{19} All-Russian Team Olympiad in programming}
+\cvitem{2018}{2nd degree award in \rom{7} Open School Olympiad in programming}
+\cvitem{2017}{Award in the Russian National Olympiad in Mathematics}
+\cvitem{2016}{3rd degree award in \rom{13} International Olympiad "Tuymaada" im mathematics}
+\cvitem{2016}{3rd degree award in \rom{8} VIII Mathematics Olympiad named after Leonard Euler}
+
+\section{Interests}
+
+\begin{cvcolumns}
+
+    \cvcolumn{}{
+        \begin{itemize}
+            \item Olympiad mathematics
+        \end{itemize}
+    }
+    \cvcolumn{}{
+        \begin{itemize}
+            \item Sport programming
+        \end{itemize}
+    }
+
+\end{cvcolumns}
+
+\end{document}
