@@ -1,3 +1,3 @@
 # CV
 
-Здесь будет лежать мое резюме
+This is repository for my cv
