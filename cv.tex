@@ -10,7 +10,7 @@
 \renewcommand{\baselinestretch}{0.75} 
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{red}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -24,21 +24,15 @@
  \geometry{bottom=0.3cm}
  \geometry{left=0.9cm}
  \geometry{right=1.1cm}
-\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-% personal data
+\setlength{\hintscolumnwidth}{3cm}
 \firstname{Kirill}
-\familyname{Sizov}                               % optional, remove / comment the line if not wanted
-\address{}{Moscow, Russia}{+7~(929)~746~6348} % optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-              % optional, remove / comment the line if not wanted
-%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
-%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
-                           % optional, remove / comment the line if not wanted
-%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\familyname{Sizov}
+\address{}{Moscow, Russia}{+7~(929)~746~6348}
 \extrainfo{sizovki@yandex.ru\\
-github.com/sizovk
+\href{https://github.com/sizovk}{github.com/sizovk}\\
+\href{https://t.me/sizovki}{t.me/sizovki}
 }               % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\photo[90pt][0.05pt]{me.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
@@ -60,109 +54,144 @@ github.com/sizovk
 
 
 \cventry{2019--2023}{BS in Applied Mathematics and Computer Science}{}{}{National Research University "Higher School of Economics", Department of Computer Science, Moscow, Russia}
-{\underline{\normalsize Relevant courses:}}
+{\underline{\normalsize Relevant subjects:} Algorithms and Data Structures, C/C++ programming, Discrete mathematics, Calculus, Linear algebra, Matrix Computations, Probability theory, Mathematical statistics}
 
-\begin{cvcolumns}
-\cvcolumn{}{
-\begin{itemize}
-    \item Algorithms and Data Structures
-    \item C++ programming
-    \item Calculus  
-    \end{itemize}
-}
-\cvcolumn{}{
-    \begin{itemize}
-    \item Discrete mathematics
-    \item Linear algebra
-    \item Probability theory
-    \end{itemize}
-}
-\end{cvcolumns}
+% \begin{cvcolumns}
+% \cvcolumn{}{
+% \begin{itemize}
+%     \item Algorithms and Data Structures
+%     \item C/C++ programming
+%     \item Calculus  
+%     \item Discrete mathematics
+%     \end{itemize}
+% }
+% \cvcolumn{}{
+%     \begin{itemize}
+%     \item Matrix Computations
+%     \item Linear algebra
+%     \item Probability theory
+%     \item Mathematical statistics 
+%     \end{itemize}
+% }
+% \end{cvcolumns}
 
-% arguments 3 to 6 can be left empty
-%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
-
-\section{Skills}
-\cvitem{Programming languages}{C++, Python, SQL}
-\cvitem{Applications}{Bash, Git, Subversion}
-\cvitem{Languages}{Russian (Native), English (Intermediate)}
-\cvitem{Other}{Linux experience, \LaTeX}
-
+% \section{Technical skills}
+% \cvitem{Programming languages}{Python, C/C++}
+% \cvitem{Applications}{Linux, Git, SQL, \LaTeX}
 
 \section{Work experience}
 
-\cvitem{Jul. 2019 -\\ Nov. 2019}{
-    \textbf{Yandex, Software Engineer intern}
-}
-
-
-\begin{cvcolumns}
-\cvcolumn{}{
-    \begin{itemize}
-        \item Python, SQL, MapReduce
-        \item Made some MapReduce tasks on big advertising data.
-        \item Developed self-monitoring system for checking time delays.
-    \end{itemize}
-}\end{cvcolumns}
-
-
-\cvitem{Jul. 2020 -\\ Oct. 2020}{
-    \textbf{Yandex, Software Engineer intern}
-}
-
-\begin{cvcolumns}
-    \cvcolumn{}{
-        \begin{itemize}
-            \item C++, Python, Protobuf
-            \item Made converter between protobuf and json format.
-            \item Wrote protection from CRLF injection.
-            \item Rewrote large code base from python2 to python3.
-        \end{itemize}
-}\end{cvcolumns}
-
-\cvitem{Oct. 2020 -\\ Present time}{
+\cvitem{October 2020 -\\ Present time}{
     \textbf{Association of Olympic winners, Teacher}
 }
 
 \begin{cvcolumns}
     \cvcolumn{}{
         \begin{itemize}
-            \item Teach to school students Python and some web programming.
+            \item Created a project-oriented programming course. 
+            \item Teach to school students Algorithms and Data Structures.
         \end{itemize}
 }\end{cvcolumns}
+
+
+\cvitem{July 2020 -\\ October 2020}{
+    \textbf{Yandex, Software Engineer intern}
+}
+
+\begin{cvcolumns}
+    \cvcolumn{}{
+        \begin{itemize}
+            \item Made memory optimization for microservices architecture.
+            \item Wrote protection from CRLF injection.
+        \end{itemize}
+}\end{cvcolumns}
+
+
+\cvitem{July 2019 -\\ November 2019}{
+    \textbf{Yandex, Software Engineer intern}
+}
+
+
+\begin{cvcolumns}
+\cvcolumn{}{
+    \begin{itemize}
+        \item Developed monitoring system for checking time delays.
+        \item Made MapReduce operations on big advertising data.
+    \end{itemize}
+}\end{cvcolumns}
+
 
 \section{Projects}
 
-\cvitem{Summer 2020}{
-    \textbf{Nutritive bot}
+\cvitem{September 2020 -\\ Present time}{
+    \textbf{\href{https://vivia.pro}{Vivia}, Co-Founder}
 }
 
 \begin{cvcolumns}
     \cvcolumn{}{
         \begin{itemize}
-            \item Telegram bot for calculating individual daily intake of nutrients (vitamins, minerals, etc.).
-            \item Bot link: \url{https://t.me/nutritive_bot}
-            \item Source code: \url{https://github.com/sizovk/nutritive_bot}
+            \item Vivia helps to find a coach for a career guidance, link: \url{https://vivia.pro}
+            \item Manage people in the team, participated in the hiring process.
+            \item Conducted customer development, evaluated the startup market and analysed the competitors.
         \end{itemize}
 }\end{cvcolumns}
 
-\cvitem{Summer 2020}{
-    \textbf{Forms bot}
+
+\cvitem{November 2020 -\\ Present time}{
+    \textbf{Real Estate Analytics}
 }
 
 \begin{cvcolumns}
     \cvcolumn{}{
         \begin{itemize}
-            \item Telegram bot for creating and completing forms.
-            \item Bot link: \url{https://t.me/quick_forms_bot}
-            \item Source code: \url{https://github.com/MakArtKar/forms_bot}
+            \item Tool for forecasting the price of real estate using Machine Learning.
+            \item Wrote parsers for popular real estate platforms and tools for data processing.
+            \item Built models for predicting the probability of selling real estate.
         \end{itemize}
 }\end{cvcolumns}
+
+\cvitem{January 2020 -\\ June 2020}{
+    \textbf{Open source telegram bots}
+}
+
+\begin{cvcolumns}
+    \cvcolumn{}{
+        \begin{itemize}
+            \item Nutritive bot (\href{https://t.me/nutritive_bot}{@nutritive\_bot}) - assistant for getting information about nutrients and calculating individual daily intake, based on your age, sex, etc. \href{https://github.com/sizovk/nutritive_bot}{Source code.}
+            \item Quick forms bot (\href{https://t.me/quick_forms_bot}{@quick\_forms\_bot}) - allows to create and pass forms that supports images, videos, files and voice messages. \href{https://github.com/MakArtKar/forms_bot}{Source code.}
+        \end{itemize}
+}\end{cvcolumns}
+
+% \cvitem{May 2020 -\\ June 2020}{
+%     \textbf{\href{https://t.me/quick_forms_bot}{Quick forms bot}}
+% }
+
+% \begin{cvcolumns}
+%     \cvcolumn{}{
+%         \begin{itemize}
+%             \item Telegram bot open source project, code: \url{https://github.com/MakArtKar/forms_bot}
+%             \item Allows to create and pass forms that supports images, videos, files and voice messages. 
+%         \end{itemize}
+% }\end{cvcolumns}
+
+% \cvitem{April 2020 -\\ May 2020}{
+%     \textbf{\href{https://t.me/nutritive_bot}{Nutritive bot}}
+% }
+
+% \begin{cvcolumns}
+%     \cvcolumn{}{
+%         \begin{itemize}
+%             \item Telegram bot open source project, code: \url{https://github.com/sizovk/nutritive_bot}
+%             \item Assistant for getting information about nutrients and calculating individual daily intake, based on your age, sex, etc.
+%         \end{itemize}
+% }\end{cvcolumns}
 
 \section{Achievements, awards and scholarships}
 \cvitem{2018}{2nd degree award in \rom{19} All-Russian Team Olympiad in programming}
 \cvitem{2018}{2nd degree award in \rom{7} Open School Olympiad in programming}
 \cvitem{2017}{Award in the Russian National Olympiad in Mathematics}
+% \cvitem{Languages}{Russian (Native), English (Intermediate)}
+% \cvitem{Other}{Linux experience, \LaTeX}
 
 \end{document}
